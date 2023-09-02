@@ -13,6 +13,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.prinzherbert.aeternam.block.ModBlocks;
+import net.prinzherbert.aeternam.item.ModCreativeModeTabs;
 import net.prinzherbert.aeternam.item.ModItems;
 import org.slf4j.Logger;
 
@@ -27,7 +29,10 @@ public class Aeternam {
     public Aeternam() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -41,9 +46,7 @@ public class Aeternam {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.AETERNAM_SPECK);
-        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

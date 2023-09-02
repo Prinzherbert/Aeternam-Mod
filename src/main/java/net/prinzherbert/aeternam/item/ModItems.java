@@ -12,6 +12,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> AETERNAM_SPECK = ITEMS.register("aeternam_speck",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AETERNAM_INGOT = ITEMS.register("aeternam_ingot",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
