@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "aeternam",
+  "ingredients": [
+    { "item": "aeternam:aeternam_block" }
+  ],
+  "result": {
+    "item": "aeternam:aeternam_ingot",
+    "count": 9
+  }
+}
