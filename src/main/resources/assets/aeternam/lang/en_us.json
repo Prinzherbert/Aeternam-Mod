@@ -1,6 +1,9 @@
 {
+  "block.aeternam.solidified_cloud": "Solidified Cloud",
+  "block.aeternam.aeternam_ore": "Aeternam Ore",
   "block.aeternam.aeternam_block": "Aeternam Block",
   "creativetab.aeternam_tab": "Aeternam",
   "item.aeternam.aeternam_ingot": "Aeternam Ingot",
-  "item.aeternam.aeternam_speck": "Aeternam Speck"
+  "item.aeternam.aeternam_speck": "Aeternam Speck",
+  "item.aeternam.ancient_nucleus": "Ancient Nucleus"
 }

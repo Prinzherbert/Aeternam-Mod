@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "aeternam",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "aeternam:aeternam_ingot"
+    }
+  },
+  "result": {
+    "item": "aeternam:aeternam_block"
+  }
+}

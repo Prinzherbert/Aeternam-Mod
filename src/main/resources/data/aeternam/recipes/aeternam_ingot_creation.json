@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "aeternam",
+  "pattern": [
+    "SSS",
+    "SAS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "aeternam:aeternam_speck"
+    },
+    "A": {
+      "item": "aeternam:ancient_nucleus"
+    }
+  },
+  "result": {
+    "item": "aeternam:aeternam_ingot",
+    "count": 8
+  }
+}
