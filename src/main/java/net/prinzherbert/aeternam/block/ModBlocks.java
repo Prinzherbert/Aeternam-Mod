@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.prinzherbert.aeternam.Aeternam;
+import net.prinzherbert.aeternam.block.custom.AncientPillar;
 import net.prinzherbert.aeternam.item.ModItems;
 
 import java.util.function.Supplier;
@@ -30,11 +31,11 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).lightLevel((p_50874_) -> { return 15; })));
 
     public static final RegistryObject<Block> ANCIENT_PILLAR_POLE = registerBlock("ancient_pillar_pole",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_ROD).sound(SoundType.SNOW)));
+            () -> new AncientPillar(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SNOW).noOcclusion()));
     public static final RegistryObject<Block> ANCIENT_PILLAR_SINGLE_BASE = registerBlock("ancient_pillar_single_base",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_ROD).sound(SoundType.SNOW)));
+            () -> new AncientPillar(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SNOW).noOcclusion()));
     public static final RegistryObject<Block> ANCIENT_PILLAR_FULL = registerBlock("ancient_pillar_full",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_ROD).sound(SoundType.SNOW)));
+            () -> new AncientPillar(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SNOW).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

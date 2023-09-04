@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.prinzherbert.aeternam.Aeternam;
+import net.prinzherbert.aeternam.item.custom.AeternamBoatItem;
 import net.prinzherbert.aeternam.item.custom.AeternamIngotItem;
 import net.prinzherbert.aeternam.item.custom.AeternamSpeckItem;
 import net.prinzherbert.aeternam.item.custom.AncientNucleusItem;
@@ -21,8 +22,8 @@ public class ModItems {
     public static final RegistryObject<Item> ANCIENT_NUCLEUS = ITEMS.register("ancient_nucleus",
             () -> new AncientNucleusItem(new Item.Properties()));
 
-    public static final RegistryObject<Item> ANCIENT_NUCLEUS = ITEMS.register("ancient_nucleus",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AETERNAM_BOAT = ITEMS.register("aeternam_boat",
+            () -> new AeternamBoatItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

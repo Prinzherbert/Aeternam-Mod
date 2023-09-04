@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "aeternam",
+  "pattern": [
+    "   ",
+    "I I",
+    "SIS"
+  ],
+  "key": {
+    "I": {
+      "item": "aeternam:aeternam_ingot"
+    },
+    "S": {
+      "item": "aeternam:aeternam_speck"
+    }
+  },
+  "result": {
+    "item": "aeternam:aeternam_boat"
+  }
+}

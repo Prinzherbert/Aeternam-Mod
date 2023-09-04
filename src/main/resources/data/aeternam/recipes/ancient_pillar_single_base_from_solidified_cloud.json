@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "aeternam:solidified_cloud"
+  },
+  "result": "aeternam:ancient_pillar_single_base"
+}

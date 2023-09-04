@@ -2,6 +2,9 @@
   "values": [
     "aeternam:solidified_cloud",
     "aeternam:aeternam_ore",
-    "aeternam:aeternam_block"
+    "aeternam:aeternam_block",
+    "aeternam:ancient_pillar_pole",
+    "aeternam:ancient_pillar_single_base",
+    "aeternam:ancient_pillar_full"
   ]
 }

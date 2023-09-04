@@ -1,5 +1,6 @@
 {
 	"parent": "block/block",
+	"ambientocclusion": false,
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "aeternam:block/ancient_pillar_pole",
