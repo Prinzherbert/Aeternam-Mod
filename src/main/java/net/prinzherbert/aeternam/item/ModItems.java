@@ -1,5 +1,7 @@
 package net.prinzherbert.aeternam.item;
 
+import net.minecraft.world.entity.vehicle.Boat;
+import net.minecraft.world.item.BoatItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -23,7 +25,7 @@ public class ModItems {
             () -> new AncientNucleusItem(new Item.Properties()));
 
     public static final RegistryObject<Item> AETERNAM_BOAT = ITEMS.register("aeternam_boat",
-            () -> new AeternamBoatItem(new Item.Properties()));
+            () -> new AeternamBoatItem(false, Boat.Type.OAK,new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
