@@ -21,11 +21,14 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.AETERNAM_SPECK.get());
                         pOutput.accept(ModItems.AETERNAM_INGOT.get());
+                        pOutput.accept(ModBlocks.AETERNAM_BLOCK.get());
                         pOutput.accept(ModItems.ANCIENT_NUCLEUS.get());
 
                         pOutput.accept(ModBlocks.AETERNAM_ORE.get());
                         pOutput.accept(ModBlocks.SOLIDIFIED_CLOUD.get());
-                        pOutput.accept(ModBlocks.AETERNAM_BLOCK.get());
+                        pOutput.accept(ModBlocks.ANCIENT_PILLAR_POLE.get());
+                        pOutput.accept(ModBlocks.ANCIENT_PILLAR_SINGLE_BASE.get());
+                        pOutput.accept(ModBlocks.ANCIENT_PILLAR_FULL.get());
                     })
                     .build());
 

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "aeternam:block/ancient_pillar_pole",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "aeternam:block/ancient_pillar_pole",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "aeternam:block/ancient_pillar_pole",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "aeternam:block/ancient_pillar_pole",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "aeternam:block/ancient_pillar_pole"
+    },
+    "facing=west": {
+      "model": "aeternam:block/ancient_pillar_pole",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

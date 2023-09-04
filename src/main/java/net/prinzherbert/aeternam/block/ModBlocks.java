@@ -1,9 +1,11 @@
 package net.prinzherbert.aeternam.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,13 +22,19 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Aeternam.MOD_ID);
 
     public static final RegistryObject<Block> SOLIDIFIED_CLOUD = registerBlock("solidified_cloud",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.WOOL)));
-
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SNOW)));
     public static final RegistryObject<Block> AETERNAM_ORE = registerBlock("aeternam_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).sound(SoundType.WOOL).lightLevel((p_50874_) -> { return 5; })));
-
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).sound(SoundType.SNOW).requiresCorrectToolForDrops()
+                    .lightLevel((p_50874_) -> { return 5; }), UniformInt.of(3, 6)));
     public static final RegistryObject<Block> AETERNAM_BLOCK = registerBlock("aeternam_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).lightLevel((p_50874_) -> { return 15; })));
+
+    public static final RegistryObject<Block> ANCIENT_PILLAR_POLE = registerBlock("ancient_pillar_pole",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_ROD).sound(SoundType.SNOW)));
+    public static final RegistryObject<Block> ANCIENT_PILLAR_SINGLE_BASE = registerBlock("ancient_pillar_single_base",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_ROD).sound(SoundType.SNOW)));
+    public static final RegistryObject<Block> ANCIENT_PILLAR_FULL = registerBlock("ancient_pillar_full",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_ROD).sound(SoundType.SNOW)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

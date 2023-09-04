@@ -1,0 +1,10 @@
+{
+  "variants":{
+    "facing=north": { "model": "aeternam:block/ancient_pillar_full", "x": 90 },
+    "facing=south": { "model": "aeternam:block/ancient_pillar_full", "x": -90},
+    "facing=west": { "model": "aeternam:block/ancient_pillar_full", "z": -90},
+    "facing=east": { "model": "aeternam:block/ancient_pillar_full", "z": 90},
+    "facing=down": { "model": "aeternam:block/ancient_pillar_full" },
+    "facing=up": { "model": "aeternam:block/ancient_pillar_full", "x": 180 }
+  }
+}
