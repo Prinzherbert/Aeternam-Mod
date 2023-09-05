@@ -22,6 +22,11 @@ public class AeternamBoatEntity extends Boat {
     }
 
     @Override
+    public boolean isNoGravity() {
+        return true;
+    }
+
+    @Override
     public ItemStack getPickedResult(HitResult target) {
         return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(Aeternam.MOD_ID, "aeternam_boat")));
     }

@@ -25,7 +25,7 @@ public class ModItems {
             () -> new AncientNucleusItem(new Item.Properties()));
 
     public static final RegistryObject<Item> AETERNAM_BOAT = ITEMS.register("aeternam_boat",
-            () -> new AeternamBoatItem(false, Boat.Type.OAK,new Item.Properties()));
+            () -> new AeternamBoatItem(false, Boat.Type.OAK, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
