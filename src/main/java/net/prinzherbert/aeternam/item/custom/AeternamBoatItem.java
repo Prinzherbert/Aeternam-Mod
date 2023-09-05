@@ -55,7 +55,7 @@ public class AeternamBoatItem extends BoatItem {
             }
 
             if (hitresult.getType() == HitResult.Type.BLOCK) {
-                AeternamBoatEntity boat = new AeternamBoatEntity(EntityType.BOAT, pLevel);
+                AeternamBoatEntity boat = new AeternamBoatEntity(pLevel, hitresult.getLocation().x, hitresult.getLocation().y, hitresult.getLocation().z);
                 boat.setYRot(pPlayer.getYRot());
                 if (!pLevel.noCollision(boat, boat.getBoundingBox())) {
                     return InteractionResultHolder.fail(itemstack);

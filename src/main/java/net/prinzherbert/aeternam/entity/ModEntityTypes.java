@@ -16,7 +16,7 @@ public class ModEntityTypes {
 
     public static final RegistryObject<EntityType<AeternamBoatEntity>> AETERNAM_BOAT =
             ENTITY_TYPES.register("aeternam_boat",
-                    () -> EntityType.Builder.of(AeternamBoatEntity::new, MobCategory.MISC).sized(1.375f, 0.5625f)
+                    () -> EntityType.Builder.<AeternamBoatEntity>of(AeternamBoatEntity::new, MobCategory.MISC).sized(1.375f, 0.5625f)
                             .build(new ResourceLocation(Aeternam.MOD_ID, "aeternam_boat").toString()));
 
     public static void register(IEventBus eventBus) { ENTITY_TYPES.register(eventBus); }

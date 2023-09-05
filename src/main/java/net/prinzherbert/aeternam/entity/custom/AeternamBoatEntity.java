@@ -16,6 +16,11 @@ public class AeternamBoatEntity extends Boat {
         super(pEntityType, pLevel);
     }
 
+    public AeternamBoatEntity(Level pLevel, double pX, double pY, double pZ) {
+        super(pLevel, pX, pY, pZ);
+        setNoGravity(true);
+    }
+
     @Override
     public Item getDropItem() {
         return ModItems.AETERNAM_BOAT.get();
@@ -24,6 +29,11 @@ public class AeternamBoatEntity extends Boat {
     @Override
     public boolean isNoGravity() {
         return true;
+    }
+
+    @Override
+    public void setNoGravity(boolean pNoGravity) {
+        super.setNoGravity(pNoGravity);
     }
 
     @Override

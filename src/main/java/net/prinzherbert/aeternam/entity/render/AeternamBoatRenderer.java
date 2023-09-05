@@ -23,8 +23,8 @@ public class AeternamBoatRenderer extends BoatRenderer {
         super(pContext, false);
         this.boatResources = Stream.of(Boat.Type.OAK).collect(ImmutableMap.toImmutableMap((boatType) -> {
             return boatType;
-        }, (p_247941_) -> {
-            return Pair.of(new ResourceLocation(Aeternam.MOD_ID, "textures/entity/boat/aeternam_boat.png"), this.createBoatModel(pContext, p_247941_, false));
+        }, (boatType) -> {
+            return Pair.of(new ResourceLocation(Aeternam.MOD_ID, "textures/entity/boat/aeternam_boat"), this.createBoatModel(pContext, boatType, false));
         }));
     }
 
