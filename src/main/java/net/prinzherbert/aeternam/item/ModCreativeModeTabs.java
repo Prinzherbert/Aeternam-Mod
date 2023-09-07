@@ -35,6 +35,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ANCIENT_PILLAR_POLE.get());
                         pOutput.accept(ModBlocks.ANCIENT_PILLAR_SINGLE_BASE.get());
                         pOutput.accept(ModBlocks.ANCIENT_PILLAR_FULL.get());
+
+                        pOutput.accept(ModItems.AERIAL_APPLE.get());
                     })
                     .build());
 

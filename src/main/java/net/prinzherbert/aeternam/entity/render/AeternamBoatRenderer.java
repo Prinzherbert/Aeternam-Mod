@@ -17,20 +17,13 @@ import java.util.Map;
 import java.util.stream.Stream;
 
 public class AeternamBoatRenderer extends BoatRenderer {
-    private final Map<Boat.Type, Pair<ResourceLocation, ListModel<Boat>>> boatResources;
 
     public AeternamBoatRenderer(EntityRendererProvider.Context pContext) {
         super(pContext, false);
-        this.boatResources = Stream.of(Boat.Type.OAK).collect(ImmutableMap.toImmutableMap((boatType) -> {
-            return boatType;
-        }, (boatType) -> {
-            return Pair.of(new ResourceLocation(Aeternam.MOD_ID, "textures/entity/boat/aeternam_boat"), this.createBoatModel(pContext, boatType, false));
-        }));
     }
 
-    private ListModel<Boat> createBoatModel(EntityRendererProvider.Context pContext, Boat.Type pType, boolean pChestBoat) {
-        ModelLayerLocation modellayerlocation = ModelLayers.createBoatModelName(Boat.Type.OAK);
-        ModelPart modelpart = pContext.bakeLayer(modellayerlocation);
-        return (ListModel<Boat>)(new BoatModel(modelpart));
+    @Override
+    public Pair<ResourceLocation, ListModel<Boat>> getModelWithLocation(Boat boat) {
+        return Pair.of(new ResourceLocation(Aeternam.MOD_ID, "textures/entity/boat/aeternam_boat.png"), super.getModelWithLocation(boat).getSecond());
     }
 }

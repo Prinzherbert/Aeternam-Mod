@@ -8,10 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.prinzherbert.aeternam.Aeternam;
-import net.prinzherbert.aeternam.item.custom.AeternamBoatItem;
-import net.prinzherbert.aeternam.item.custom.AeternamIngotItem;
-import net.prinzherbert.aeternam.item.custom.AeternamSpeckItem;
-import net.prinzherbert.aeternam.item.custom.AncientNucleusItem;
+import net.prinzherbert.aeternam.item.custom.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Aeternam.MOD_ID);
@@ -26,6 +23,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> AETERNAM_BOAT = ITEMS.register("aeternam_boat",
             () -> new AeternamBoatItem(false, Boat.Type.OAK, new Item.Properties()));
+
+
+    //TODO Maybe try to make the aerial items float when dropped.
+    public static final RegistryObject<Item> AERIAL_APPLE = ITEMS.register("aerial_apple",
+            () -> new AerialAppleItem(new Item.Properties().food(ModFoods.AERIAL_APPLE)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -78,6 +78,11 @@ public class AeternamBoatItem extends BoatItem {
     }
 
     @Override
+    public int getMaxStackSize(ItemStack stack) {
+        return 1;
+    }
+
+    @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
         pTooltipComponents.add(Component.translatable("item.aeternam.aeternam_boat.description.line_1").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.ITALIC));
